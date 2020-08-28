@@ -161,11 +161,12 @@ class Dashboard(object):
         for css in getattr(self.Media, 'css', ()):
             unique_css.add(css)
 
-        for module in self.modules:
-            for js in getattr(module.Media, 'js', ()):
-                unique_js.add(js)
-            for css in getattr(module.Media, 'css', ()):
-                unique_css.add(css)
+        for row in self.children:
+            for module in row:
+                for js in getattr(module.Media, 'js', ()):
+                    unique_js.add(js)
+                for css in getattr(module.Media, 'css', ()):
+                    unique_css.add(css)
 
         class Media:
             css = list(unique_css)
