@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'jet-icons';
-  src:  url('fonts/jet-icons.eot?415d6s');
-  src:  url('fonts/jet-icons.eot?415d6s#iefix') format('embedded-opentype'),
-    url('fonts/jet-icons.ttf?415d6s') format('truetype'),
-    url('fonts/jet-icons.woff?415d6s') format('woff'),
-    url('fonts/jet-icons.svg?415d6s#jet-icons') format('svg');
+  src:  re_path('fonts/jet-icons.eot?415d6s');
+  src:  re_path('fonts/jet-icons.eot?415d6s#iefix') format('embedded-opentype'),
+    re_path('fonts/jet-icons.ttf?415d6s') format('truetype'),
+    re_path('fonts/jet-icons.woff?415d6s') format('woff'),
+    re_path('fonts/jet-icons.svg?415d6s#jet-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
